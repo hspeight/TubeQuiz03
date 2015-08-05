@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:threefiftyprefs="http://schemas.android.com/apk/res-auto">
+
+    <com.tubequiz.tubequiz03.ListPreferenceMultiSelect
+        threefiftyprefs:checkAll="All"
+        threefiftyprefs:separator="|"
+        android:defaultValue="None"
+        android:key="lines"
+        android:title="@string/pref_setting_lines_to_include"
+        android:dialogTitle="Select Lines"
+        android:summary=""
+        android:entries="@array/line_entries"
+        android:entryValues="@array/line_values" />
+
+    <com.tubequiz.tubequiz03.ListPreferenceMultiSelect
+        threefiftyprefs:checkAll="All"
+        threefiftyprefs:separator="|"
+        android:defaultValue="None"
+        android:key="zones"
+        android:title="@string/pref_setting_zones_to_include"
+        android:dialogTitle="Select Zones"
+        android:summary=""
+        android:entries="@array/zone_entries"
+        android:entryValues="@array/zone_values" />
+
+    <CheckBoxPreference
+        android:title="Include DLR"
+        android:defaultValue="false"
+        android:summary="Include stations on the Docklands Light Railway"
+        android:key="dlr" />
+
+    <CheckBoxPreference
+        android:title="Timer Mode"
+        android:defaultValue="false"
+        android:summary="Time quizes"
+        android:key="timer" />
+
+</PreferenceScreen>
