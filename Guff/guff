@@ -1,0 +1,2 @@
+adb -s emulator-5554 shell
+cd /data/data/com.example.hector.tubequiz02/shared_prefs
