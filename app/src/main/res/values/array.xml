@@ -1,0 +1,58 @@
+<resources>
+
+    <string-array name="zone_entries">
+        <item name="all">All</item>
+        <item name="Zone1">1</item>
+        <item name="Zone2">2</item>
+        <item name="Zone3">3</item>
+        <item name="Zone4">4</item>
+        <item name="Zone5">5</item>
+        <item name="Zone6">6</item>
+        <item name="Zone7">7</item>
+        <item name="Zone8">8</item>
+        <item name="Zone9">9</item>
+    </string-array>
+
+    <string-array name="zone_values">
+        <item name="all">All</item>
+        <item name="Zone1">1</item>
+        <item name="Zone2">2</item>
+        <item name="Zone3">3</item>
+        <item name="Zone4">4</item>
+        <item name="Zone5">5</item>
+        <item name="Zone6">6</item>
+        <item name="Zone7">7</item>
+        <item name="Zone8">8</item>
+        <item name="Zone9">9</item>
+    </string-array>
+
+    <string-array name="line_entries">
+        <item name="all">All</item>
+        <item name="bak">Bakerloo</item>
+        <item name="cen">Central</item>
+        <item name="cir">Circle</item>
+        <item name="dis">District</item>
+        <item name="ham">Hammersmith &amp; City</item>
+        <item name="jub">Jubilee</item>
+        <item name="met">Metropolitan</item>
+        <item name="nor">Northern</item>
+        <item name="pic">Picadilly</item>
+        <item name="vic">Victoria</item>
+    </string-array>
+
+    <string-array name="line_values">
+        <item name="all">All</item>
+        <item name="bak">1</item>
+        <item name="cen">2</item>
+        <item name="cir">3</item>
+        <item name="dis">4</item>
+        <item name="ham">5</item>
+        <item name="jub">6</item>
+        <item name="met">7</item>
+        <item name="nor">8</item>
+        <item name="pic">9</item>
+        <item name="vic">A</item>
+
+    </string-array>
+
+</resources>
