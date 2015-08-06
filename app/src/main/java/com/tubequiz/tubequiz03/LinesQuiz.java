@@ -2,9 +2,13 @@ package com.tubequiz.tubequiz03;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class LinesQuiz extends Activity {
 
@@ -12,6 +16,23 @@ public class LinesQuiz extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lines_quiz);
+    }
+
+    public void startCountdown (View v){
+
+        final Button startButton = (Button) findViewById(R.id.startbutton);
+
+        new CountDownTimer(3100, 1000) { // see http://stackoverflow.com/questions/10032003/how-to-make-a-countdown-timer-in-android
+
+            public void onTick(long millisUntilFinished) {
+                startButton.setText((millisUntilFinished / 1000) + "");
+            }
+
+            public void onFinish() {
+                startButton.setText("Go!");
+            }
+        }.start();
+
     }
 /*
     @Override
