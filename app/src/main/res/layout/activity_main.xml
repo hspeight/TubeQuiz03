@@ -6,7 +6,18 @@
     android:background="@drawable/ghost_stations">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/station_quiz"
+        android:background="@drawable/rectanglebg"
+        android:id="@+id/stationbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:padding="10dp"
+        android:onClick="stationQuizSelected" />
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/line_quiz"
         android:background="@drawable/rectanglebg"
@@ -14,15 +25,27 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="40dp"
         android:padding="10dp"
-        android:onClick="linesQuizSelected" />
+        android:onClick="lineQuizSelected" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/zone_quiz"
         android:background="@drawable/rectanglebg"
         android:id="@+id/zonebutton"
         android:layout_gravity="center_horizontal"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:layout_margin="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list stations"
+        android:background="@drawable/rectanglebg"
+        android:id="@+id/btnListStations"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="40dp"
+        android:onClick="listStationsSelected"/>
 
 </LinearLayout>

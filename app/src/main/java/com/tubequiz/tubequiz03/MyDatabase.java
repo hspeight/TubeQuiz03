@@ -12,7 +12,7 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 public class MyDatabase extends SQLiteAssetHelper {
 
     private static final String DATABASE_NAME = "tubequiz.db";
-    private static final int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 2;
 
     public MyDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -26,7 +26,7 @@ public class MyDatabase extends SQLiteAssetHelper {
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 
-        String [] sqlSelect = {"_id","station"};
+        String [] sqlSelect = {"_id","station_name"};
         String sqlTables = "stations";
 
         qb.setTables(sqlTables);

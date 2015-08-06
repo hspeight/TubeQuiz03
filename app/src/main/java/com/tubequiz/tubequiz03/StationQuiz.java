@@ -2,20 +2,24 @@ package com.tubequiz.tubequiz03;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+//import android.widget.EditText;
+import android.widget.TextView;
 
-public class LinesQuiz extends Activity {
+public class StationQuiz extends Activity {
+
+    TextView stationName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lines_quiz);
+        setContentView(R.layout.activity_stations_quiz);
+
+        stationName = (TextView) findViewById(R.id.tvStation);
+        stationName.setText("");
     }
 
     public void startCountdown (View v){
@@ -30,9 +34,15 @@ public class LinesQuiz extends Activity {
 
             public void onFinish() {
                 startButton.setText("Go!");
+                start_quiz();
             }
         }.start();
 
+    }
+
+    public void start_quiz() {
+
+        stationName.setText("Elephant & Castleish");
     }
 /*
     @Override

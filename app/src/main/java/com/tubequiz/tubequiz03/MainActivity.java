@@ -16,13 +16,19 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void linesQuizSelected (View v){
+    public void stationQuizSelected (View v){
 
-        Intent intent = new Intent(getBaseContext(), LinesQuiz.class);
+        Intent intent = new Intent(getBaseContext(), StationQuiz.class);
         startActivity(intent);
 
     }
 
+    public void listStationsSelected (View v){
+
+        Intent intent = new Intent(getBaseContext(), StationList.class);
+        startActivity(intent);
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

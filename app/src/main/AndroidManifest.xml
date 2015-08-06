@@ -22,9 +22,14 @@
             android:parentActivityName=".MainActivity" >
         </activity>
         <activity
-            android:name=".LinesQuiz"
-            android:label="@string/title_activity_lines_quiz"
+            android:name=".StationQuiz"
+            android:label="@string/title_activity_station_quiz"
             android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".StationList"
+            android:label="List of stations"
+             >
         </activity>
     </application>
 
