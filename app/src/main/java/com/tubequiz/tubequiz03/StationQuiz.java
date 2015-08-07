@@ -2,6 +2,7 @@ package com.tubequiz.tubequiz03;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -9,16 +10,23 @@ import android.widget.Button;
 //import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class StationQuiz extends Activity {
 
+    //private Cursor station;
+    private MyDatabase db;
     TextView stationName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        db = new MyDatabase(this);
+
         setContentView(R.layout.activity_stations_quiz);
 
-        stationName = (TextView) findViewById(R.id.tvStation);
+        stationName = (TextView) findViewById(R.id.tvStationName);
         stationName.setText("");
     }
 
@@ -42,7 +50,11 @@ public class StationQuiz extends Activity {
 
     public void start_quiz() {
 
-        stationName.setText("Elephant & Castleish");
+        Random rand = new Random();
+
+        String station = db.getStation(rand.nextInt(10) + 1); // station id between 1 & 10
+        stationName.setText(station);
+        //stationName.setText("Elephant & Castleish");
     }
 /*
     @Override
